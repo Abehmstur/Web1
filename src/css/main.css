@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'militar';
+    src: url('../fonts/Explotion.ttf') format('truetype');
+    font-style: normal;
+}
+body {
+    background-color: #424756;
+    /* 1º valor é RED, 2º Valor é GREEN, 3º Valor é BLUE e o 4º Valor é o grau de transparência.*/
+}
+
+ul {
+    font-family: 'militar';
+    font-size: 20px;
+    display: flex;
+    list-style: none;
+}
+
+li {
+   padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+li:hover {
+    background-color: #6ea171;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav {
+    background-color: #4d784e;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 600px) {
+    ul {
+      font-size: 10px;
+    }
+  }
