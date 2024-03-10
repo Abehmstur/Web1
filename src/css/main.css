@@ -6,6 +6,9 @@
 body {
     background-color: #424756;
     /* 1º valor é RED, 2º Valor é GREEN, 3º Valor é BLUE e o 4º Valor é o grau de transparência.*/
+    width: 800px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 ul {
@@ -17,6 +20,12 @@ ul {
 
 li {
    padding: 10px;
+}
+
+p {
+    font-family: 'militar';
+    color: white;
+    padding-left: 15px;
 }
 
 a {
@@ -32,6 +41,8 @@ li:hover {
 nav {
     background-color: #4d784e;
     padding: 5px;
+    border-radius: 0.5rem;
+    line-height: 20px;
 }
 
 

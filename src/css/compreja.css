@@ -1,0 +1,27 @@
+#catalogo > div {
+    width: 225px;
+    text-align: center;
+    padding: 5px;
+    border: solid 2px white;
+    border-radius: 0.5rem;
+    background-color: #4d784e;
+}
+
+#catalogo > div > p {
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+#catalogo > div > img{
+   margin-top: 0.5rem;
+   border: solid 2px white; 
+   border-radius: 1rem;
+}
+
+#comprar {
+    background-color: white;
+    border-radius: 1rem;
+    border: solid 2px white;
+    font-size: 15px;
+    width: auto;
+}

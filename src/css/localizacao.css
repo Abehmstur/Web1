@@ -1,0 +1,8 @@
+#map {
+    text-align: center;
+}
+
+#map > iframe {
+    border: solid 5px #4d784e;
+    border-radius: 0.5rem;
+}
