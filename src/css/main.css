@@ -45,6 +45,11 @@ nav {
     line-height: 20px;
 }
 
+footer {
+    text-align: center;
+    justify-items: baseline;
+}
+
 
 @media screen and (max-width: 600px) {
     ul {
