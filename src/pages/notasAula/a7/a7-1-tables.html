@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7 TABLE</title>
+    
+    <style>
+        table, th, td{
+            border: solid 1px black;
+            border-collapse: collapse;
+            text-align: center;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>TABELAS</h1>
+    <table>
+        <!--CADA TR é uma LINHA-->
+        <tr>
+            <!--CADA TH é uma CABEÇALHO DA TABLE-->
+            <th>Nome</th>
+            <th>Sobrenome</th>
+
+            <!--colspan define o tamanho de colunas em quantidade x-->
+            <th colspan="2">Telefone</th>
+
+        </tr>
+
+        <tr>
+            <!--CADA TD é uma COLUNA-->
+            <td>Galvão</td>
+            <td>Bueno</td>
+            <td>4002-8922</td>
+            <td>4002-8922</td>
+        </tr>
+        
+        <tr>
+            <td>William</td>
+            <td>Shakespeare</td>
+            <td>3326-1149</td>
+            <td>3326-1149</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <th>Nome</th>
+            <td>Will</td>
+            <td>Maria</td>
+        </tr>
+
+        <tr>
+            <th>Sobrenome</th>
+            <td>Smith</td>
+            <td>Adelia</td>
+        </tr>
+
+        <tr>
+            <!--rowspan define o tamanho de linha em quantidade x-->
+            <th rowspan="3">Telefone</th>
+            <td>3326-1149</td>
+            <td>3326-1149</td>
+        </tr>
+
+        <tr>
+            <td>3326-1149</td>
+            <td>3326-1149</td>
+        </tr>
+
+        <tr>
+            <td>3326-1149</td>
+            <td>3326-1149</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

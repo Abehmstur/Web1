@@ -1,0 +1,44 @@
+#atividades {
+    display: flex;
+}
+
+#atividades > div {
+    width: 180px;
+    text-align: center;
+    padding: 5px;
+    border: solid 2px white;
+    border-radius: 0.5rem;
+    background-color: #4d784e;
+    margin: 10px;
+}
+
+#atividades > div > p {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    font-size: 15px;
+}
+
+#atividades > div > img{
+   margin-top: 0.5rem;
+   border: solid 2px white; 
+   border-radius: 1rem;
+}
+
+#acessar{
+    background-color: white;
+    border-radius: 1rem;
+    border: solid 2px white;
+    font-size: 15px;
+    width: auto;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+#acessar > a{
+    color: #4d784e;
+}
+
+#acessar:hover {
+    background-color: #4d784e;
+    color: white;
+}
