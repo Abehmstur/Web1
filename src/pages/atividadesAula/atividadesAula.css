@@ -32,13 +32,16 @@
     width: auto;
     padding-right: 5px;
     padding-left: 5px;
+    color: #4d784e;
 }
 
-#acessar > a{
+#acessar > a {
     color: #4d784e;
 }
 
 #acessar:hover {
     background-color: #4d784e;
+}
+#acessar:hover > a {
     color: white;
 }

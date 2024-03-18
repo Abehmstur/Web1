@@ -1,0 +1,20 @@
+body {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+    background-color: green;
+    border: solid 1px white;
+    border-radius: 1rem;
+    padding: 5px;
+}
+a:hover {
+    background-color: white;
+    color: green;
+}
