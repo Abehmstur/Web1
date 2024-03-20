@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            width: 80%;
+            margin: auto;
+        }
+        #principal{
+            width: 80%;
+            margin: auto;
+            background-color: tomato;
+        }
+        header {
+            margin: auto;
+            width: 100%;
+            background-color: gray;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+
+        ul {
+            text-align: start;
+            margin-left: 20px;
+        }
+        ul > li {
+            display: inline;
+            margin-right: 10px;
+        }
+        /*O float
+        A propriedade float do CSS determina que um elemento deve ser retirado do seu fluxo normal e colocado 
+        ao longo do lado direito ou esquerdo do seu containêr, onde textos e elementos em linha irão se posicionar ao seu redor.*/
+        nav {
+            float: left;
+            margin: auto;
+            width: 25%;
+            background-color: aquamarine;
+            height: 300 px;
+        }
+        article {
+            float: left;
+            margin: auto;
+            width: 50%;
+            height: 300px;
+            background-color: bisque;
+        }
+
+        aside {
+            float: right;
+            margin: auto;
+            width: 25%;
+            height: 300px;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        footer {
+            margin: auto;
+            width: 100%;
+            background-color: gray;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="principal" class="container">
+        <header class="header">
+            <img src="ufrn-sem-legenda.svg" style="width: 10%; float: left; margin: 10px; margin-right: 3rem;" alt="logo ufrn">
+            <ul style="list-style: none;">
+                <li>Institucional</li>
+                <li>Ensino</li>
+                <li>Editais</li>
+                <li>Contatos</li>
+            </ul>
+        </header>
+        <nav>
+            <p>nav</p>
+        </nav>
+        <article>
+            <p>Article</p>
+        </article>
+        <aside>
+            <p>aside</p>
+        </aside>
+        <footer>
+            <p>footer</p>
+        </footer>
+    </div>
+</body>
+
+</html>
