@@ -1,0 +1,125 @@
+body{
+    background-color: #F8F6E3;
+    margin: auto;
+    width: 80%;
+}
+.container{
+    border-radius: 10px;
+    background-color: #7AA2E3;
+    display: flex;
+    margin: 5px;
+    flex-direction: row;
+}
+
+.internas {
+    border-radius: 10px;
+    background-color: #6AD4DD;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+}
+
+.internas:hover {
+    background-color: #F8F6E3;
+}
+
+.container2{
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #240A34;
+    display: flex;
+    flex-direction: column;
+}
+
+.internas2 {
+    border-radius: 10px;
+    background-color: #891652;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+}
+
+.internas2:hover {
+    background-color: #EABE6C;
+}
+
+.container3{
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #B5C0D0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.internas3 {
+    border-radius: 10px;
+    background-color: #EED3D9;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+}
+
+.internas3:hover {
+    background-color: #CCD3CA;
+}
+
+.container4{
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #898121;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.internas4 {
+    border-radius: 10px;
+    background-color: #E8751A;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+}
+
+.internas4:hover {
+    background-color: #FDA403;
+}
+
+.container5{
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #ACE2E1;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.internas5 {
+    border-radius: 10px;
+    background-color: #41C9E2;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+}
+
+.internas5:hover {
+    background-color: #008DDA;
+}
+
+.container6{
+    border-radius: 10px;
+    margin: 5px;
+    background-color: #ACE2E1;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+}
+
+.internas6 {
+    border-radius: 10px;
+    background-color: #41C9E2;
+    margin: 10px;
+    padding: 10px;
+    width: 100px;
+}
+
+.internas6:hover {
+    background-color: #008DDA;
+}
