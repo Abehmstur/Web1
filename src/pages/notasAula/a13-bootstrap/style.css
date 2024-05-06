@@ -1,0 +1,22 @@
+.cor1 {
+    background-color: aquamarine;
+}
+
+.cor2 {
+    background-color: tomato;
+}
+
+.cor3 {
+    background-color: blueviolet;
+}
+
+.col, .col-sm, .col-md {
+    border: solid 1px black;
+    border-radius: 1rem;
+    margin: 1px;
+}
+
+.btn-primary {
+    margin: 10px;
+    background-color: aqua;
+}
