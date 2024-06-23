@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    thead th:nth-child(1),
+    tbody td:nth-child(1) {
+      position: sticky;
+      left: 0;
+      background-color: #fff;
+      z-index: 2;
+    }
+
+    thead th:nth-child(2),
+    tbody td:nth-child(2) {
+      position: sticky;
+      left: 100px;
+      background-color: #fff;
+      z-index: 1;/*usar no meu site*/
+    }
+
+    .fixed-content {
+      position: sticky;
+      left: 100px;
+      background-color: #fff;
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .container {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <table>
+      <thead>
+        <tr>
+          <th style="min-width: 50px;">Nome</th>
+          <th style="min-width: 100px;">Matrícula</th>
+          <th>Coluna 3</th>
+          <th>Coluna 4</th>
+          <th>Coluna 5</th>
+          <th>Coluna 6</th>
+          <th>Coluna 7</th>
+          <th>Coluna 8</th>
+          <th>Coluna 9</th>
+          <th>Coluna 10</th>
+          <th>Coluna 11</th>
+          <th>Coluna 12</th>
+          <th>Coluna 13</th>
+          <th>Coluna 14</th>
+          <th>Coluna 15</th>
+          <th>Coluna 16</th>
+          <th>Coluna 17</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>João Silva</td>
+          <td>12345</td>
+          <td>Conteúdo da Coluna 3</td>
+          <td>Conteúdo da Coluna 4</td>
+          <td>Conteúdo da Coluna 5</td>
+          <td>Conteúdo da Coluna 6</td>
+          <td>Conteúdo da Coluna 7</td>
+          <td>Conteúdo da Coluna 8</td>
+          <td>Conteúdo da Coluna 9</td>
+          <td>Conteúdo da Coluna 10</td>
+          <td>Conteúdo da Coluna 11</td>
+          <td>Conteúdo da Coluna 12</td>
+          <td>Conteúdo da Coluna 13</td>
+          <td>Conteúdo da Coluna 14</td>
+          <td>Conteúdo da Coluna 15</td>
+          <td>Conteúdo da Coluna 16</td>
+          <td>Conteúdo da Coluna 17</td>
+        </tr>
+        <tr>
+          <td>Maria Gomes</td>
+          <td><div class="fixed-content">54321</div></td>
+          <td>Conteúdo da Coluna 3</td>
+          <td>Conteúdo da Coluna 4</td>
+          <td>Conteúdo da Coluna 5</td>
+          <td>Conteúdo da Coluna 6</td>
+          <td>Conteúdo da Coluna 7</td>
+          <td>Conteúdo da Coluna 8</td>
+          <td>Conteúdo da Coluna 9</td>
+          <td>Conteúdo da Coluna 10</td>
+          <td>Conteúdo da Coluna 11</td>
+          <td>Conteúdo da Coluna 12</td>
+          <td>Conteúdo da Coluna 13</td>
+          <td>Conteúdo da Coluna 14</td>
+          <td>Conteúdo da Coluna 15</td>
+          <td>Conteúdo da Coluna 16</td>
+          <td>Conteúdo da Coluna 17</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

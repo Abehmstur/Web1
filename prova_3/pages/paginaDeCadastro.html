@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pr-br">
 <head>
-    au
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Matheus Barros e William Oliveira (Big Boss)">
@@ -9,6 +8,20 @@
 
     <!-- JQUERY IMPORT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="../scripts/service.js"></script>
+
+    <style>
+        #airbagDiv {
+            display: none;
+        }
+    </style>
+
+    <style>
+        #cilindradasDiv {
+            display: none;
+        }
+    </style>
 
     <title>Cadastro Page</title>
 </head>
@@ -21,7 +34,58 @@
             </div>
         </div>
         <div class="section">
-            <!-- content -->
+            <h1>Cadastro de Veículo</h1>
+            <form id="form" class="mb-4">
+                <label for="marca">Marca:</label>
+                <br>
+                <input id="marca" type="text">
+                <br><br>
+                <label for="modelo">Modelo:</label>
+                <br>
+                <input id="modelo" type="text">
+                <br><br>
+                <label for="anoFabricacao">Ano de fabricação:</label>
+                <br>
+                <input id="anoFabricacao" type="number">
+                <br><br>
+                <label for="cor">Cor:</label>
+                <br>
+                <input id="cor" type="text">
+                <br><br>
+                <label for="tipo">Tipo:</label>
+                <br>
+                <input id="tipo" type="text">
+                <br><br>
+                <label for="quilometragem">Quilometragem:</label>
+                <br>
+                <input id="quilometragem" type="text">
+                <br><br>
+                <label for="qtdPortas">Quantidade de portas:</label>
+                <br>
+                <input id="qtdPortas" type="text" onchange="toggleAtributo()">
+                <br><br>
+                <label for="preco">Preço:</label>
+                <br>
+                <input id="preco" type="number">
+                <br><br>
+                
+                <div id="airbagDiv">
+                    <label for="airbag">Airbag: </label>
+                    <input id="airbag" type="checkbox">
+                    <br><br>
+                </div>
+
+                <div id="cilindradasDiv">
+                    <label for="cilindradas">Cilindradas:</label>
+                    <br>
+                    <input id="cilindradas" type="number">
+                    <br><br>
+                </div>
+
+            </form>
+
+            <button onclick="cadastrarVeiculo()">Cadastrar</button>
+            
         </div>
         <div class="footer">
             <!-- content -->

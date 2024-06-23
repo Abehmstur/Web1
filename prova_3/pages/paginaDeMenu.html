@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pr-br">
 <head>
-    au
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Matheus Barros e William Oliveira (Big Boss)">
@@ -9,6 +8,8 @@
 
     <!-- JQUERY IMPORT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="../scripts/service.js"></script>
 
     <title>Menu Page</title>
 </head>
@@ -21,7 +22,12 @@
             </div>
         </div>
         <div class="section">
-            <!-- content -->
+            <h1>Menu</h1>
+            <div id="menu" style="display: flex; flex-direction: column; gap: 10px; width: 300px;">
+                <button onclick="paginaDeCadastro()">Cadastrar Veículos</button>
+                <button onclick="paginaDeListagem()">Listar/Buscar Veículos</button>
+                <button onclick="paginaDeExcluir()">Excluir Veículos</button>
+            </div>
         </div>
         <div class="footer">
             <!-- content -->
