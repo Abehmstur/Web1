@@ -1,0 +1,49 @@
+img {
+    width: 75%;
+    height: 75%;
+}
+
+body {
+    background-color: #10162A;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.loginHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    background-color: #10162A;
+    color: #FBFEE9;
+    border: #FBFEE9 solid 1px;
+    border-radius:  0.5rem;
+    width: 400px;
+}
+
+#loginButton {
+    background-color: #FBFEE9;
+    width: 30%;
+    height: 40px;
+    border-radius: 0.5rem;
+    font-size: medium;
+    font-weight: bold;
+}
+
+#loginButton:hover {
+    background-color: #c3c5b4;
+    cursor: pointer;
+}
+
+.footer {
+    bottom: 0;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #c3c5b4;
+}

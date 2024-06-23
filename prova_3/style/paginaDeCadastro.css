@@ -1,0 +1,75 @@
+img {
+    width: 30%;
+    height: 30%;
+}
+
+body {
+    background-color: #10162A;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+}
+
+.crudCarro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    background-color: #10162A;
+    color: #FBFEE9;
+    border: #FBFEE9 solid 1px;
+    border-radius:  0.2rem;
+    width: 800px;
+}
+
+.formulario {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#cadastrarBtn {
+    background-color: #FBFEE9;
+    width: 15%;
+    height: 60px;
+    border-radius: 0.2rem;
+    font-size: medium;
+    font-weight: bold;
+    opacity: 90%;
+}
+
+#cadastrarBtn:hover {
+    background-color: #c3c5b4;
+    cursor: pointer;
+}
+
+.footer {
+    bottom: 0;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #c3c5b4;
+}

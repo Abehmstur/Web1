@@ -9,6 +9,9 @@
     <!-- JQUERY IMPORT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="../style/paginaDeMenu.css">
+
     <script src="../scripts/service.js"></script>
 
     <title>Menu Page</title>
@@ -22,15 +25,19 @@
             </div>
         </div>
         <div class="section">
-            <h1>Menu</h1>
-            <div id="menu" style="display: flex; flex-direction: column; gap: 10px; width: 300px;">
-                <button onclick="paginaDeCadastro()">Cadastrar Veículos</button>
-                <button onclick="paginaDeListagem()">Listar/Buscar Veículos</button>
-                <button onclick="paginaDeExcluir()">Excluir Veículos</button>
+            <div class="menus">
+                <img src="../img/logoMW2.jpeg" alt="logo site mw importados">
+                <h1>Menu: </h1>
+                <div id="menu">
+                    <button class="menuButton" onclick="paginaDeCadastro()">Cadastrar Veículos</button>
+                    <button class="menuButton" onclick="paginaDeListagem()">Listar/Buscar Veículos</button>
+                    <button class="menuButton" onclick="paginaDeExcluir()">Excluir Veículos</button>
+                </div>
             </div>
         </div>
         <div class="footer">
             <!-- content -->
+            <p> ₢ MW Imports - Web I - 2024</p>
         </div>
     </div>
     

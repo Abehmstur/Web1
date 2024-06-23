@@ -9,6 +9,9 @@
     <!-- JQUERY IMPORT -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <!-- IMPORT CSS -->
+     <link rel="stylesheet" href="../style/paginaDeLogin.css">
+
     <script src="../scripts/service.js"></script>
 
     <title>Login Page</title>
@@ -18,25 +21,28 @@
     <div class="container">
         <div class="header">
             <div class="nav">
-                <!-- content -->
+                <!-- Login não há Nav -->
             </div>
         </div>
         <div class="section">
-            <h1>Página de Login</h1>
-            <form id="form" class="mb-4">
-                <label for="login">Login:</label>
-                <br>
-                <input id="login" type="text">
-                <br><br>
-                <label for="senha">Senha:</label>
-                <br>
-                <input id="senha" type="password">
-                <br><br>
-            </form>
-            <button onclick="realizarLogin()">Login</button>
+            <div class="loginHome">
+                <img src="../img/logoMW2.jpeg" alt="logo site mw importados">
+                <form id="form" class="mb-4">
+                    <label for="login">Usuário:</label>
+                    <br>
+                    <input id="login" type="text">
+                    <br><br>
+                    <label for="senha">Senha:</label>
+                    <br>
+                    <input id="senha" type="password">
+                    <br><br>
+                </form>
+                <button id="loginButton" onclick="realizarLogin()">Entrar</button>
+            </div>
         </div>
         <div class="footer">
             <!-- content -->
+             <p> ₢ MW Imports - Web I - 2024</p>
         </div>
     </div>
 </body>
