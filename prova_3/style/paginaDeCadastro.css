@@ -51,17 +51,24 @@ input {
     border-radius: 4px;
 }
 
-#cadastrarBtn {
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    justify-content: center;
+}
+
+#cadastrarBtn, #voltarBtn {
     background-color: #FBFEE9;
-    width: 15%;
-    height: 60px;
+    width: 30%;
+    height: 40px;
     border-radius: 0.2rem;
     font-size: medium;
     font-weight: bold;
     opacity: 90%;
 }
 
-#cadastrarBtn:hover {
+#cadastrarBtn:hover , #voltarBtn:hover{
     background-color: #c3c5b4;
     cursor: pointer;
 }

@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Matheus Barros e William Oliveira (Big Boss)">
 
-
-    <!-- JQUERY IMPORT -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-    <script src="../scripts/service.js"></script>
+    <!-- IMPORT CSS -->
+    <link rel="stylesheet" href="../style/paginaDeMenu.css">
+    <link rel="stylesheet" href="../style/paginaDeListagem.css">
 
     <title>Excluir Page</title>
 </head>
@@ -22,13 +20,25 @@
             </div>
         </div>
         <div class="section">
-            <h1>Excluir</h1>
+            <div class="menus">
+                <img src="../img/logoMW2.jpeg" alt="logo site mw importados">
+                <div id="menu">
+                    <button class="menuButton" onclick="paginaDeMenu()">Voltar</button>
+                    <button class="menuButton" onclick="excluirVeiculo()">Excluir Veículo</button>
+                </div>
+                <div id="listaVeiculos"></div>
+                </div>
+            </div>
         </div>
+        
         <div class="footer">
             <!-- content -->
             <p> ₢ MW Imports - Web I - 2024</p>
         </div>
     </div>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../scripts/service.js"></script>
+    <script>window.listarVeiculo()</script>
 </body>
 </html>

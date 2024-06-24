@@ -21,6 +21,10 @@ function paginaDeListagem(){
     window.location.href = 'paginaDeListagem.html';
 }
 
+function paginaDeMenu(){
+    window.location.href = 'paginaDeMenu.html';
+}
+
 function paginaDeExcluir(){
     window.location.href = 'paginaDeExcluir.html';
 }
@@ -87,8 +91,111 @@ function cadastrarVeiculo(){
         };
     }
 
-    var veiculoJSON = JSON.stringify(veiculo);
-    localStorage.setItem('veiculo', veiculoJSON);
+    if (marca === ""  && modelo === "" && cor === "" && tipo === "") {
+        alert("É obrigatório informar pelo menos: Marca, modelo, cor ou tipo.");
+        return;
+    } else {
+        var veiculoJSON = JSON.stringify(veiculo);
+        salvarNoLocalStorage(veiculoJSON);
+    }
+}
+
+function salvarNoLocalStorage(veiculo) {
+    let veiculos = localStorage.getItem('veiculos');
+        
+    if (veiculos) {
+        veiculos = JSON.parse(veiculos);
+    } else {
+        veiculos = [];
+    }
+
+    veiculos.push(veiculo);
+
+    localStorage.setItem('veiculos', JSON.stringify(veiculos));
+
     alert('Veículo cadastrado com sucesso!');
 }
+
+/* Usando Jquery */
+function listarVeiculo(){
+    let veiculos = localStorage.getItem('veiculos');
+    const veiculosList = $('#listaVeiculos');
+    veiculosList.css('display', 'block');
+
+    if(veiculos) {
+        veiculos = JSON.parse(veiculos);
+    } else {
+        veiculos = [];
+    }
+
+    if (veiculos.length === 0) {
+        veiculosList.html('<p class="msg-error">Nenhum veículo cadastrado.</p>');
+        return;
+    }
+
+    var v = [];
+    veiculos.forEach(jsonStr => {
+        let veiculo_temp = JSON.parse(jsonStr);
+        v.push(veiculo_temp);
+    });
+
+    let html = '<h3>Veículos Cadastrados: </h3><ul>';
+    
+    v.forEach(veiculo => {
+        html += `<li>Marca: ${veiculo.marca}, Modelo: ${veiculo.modelo}, Ano: ${veiculo.anoFabricacao}, Preço: ${veiculo.preco}</li>`;
+    });
+
+    html += '</ul>';
+
+    veiculosList.html(html);
+    
+    console.log(v);
+}
+
+/* function buscarVeiculo(){
+    const veiculosList = $('#listaVeiculos');
+    veiculosList.css('display', 'none');
+
+    let html = '<label>Ano: </label>';
+
+} */
+
+function excluirVeiculo(){
+    /* const marca = prompt("Digite a marca do veículo que deseja excluir:"); */
+    const modelo = prompt("Digite o modelo do veículo que deseja excluir:");
+
+    let veiculos = localStorage.getItem('veiculos');
+
+    if (veiculos) {
+        veiculos = JSON.parse(veiculos);
+    } else {
+        veiculos = [];
+        alert('Nenhum veículo cadastrado para excluir.');
+        return;
+    }
+
+    let v = [];
+    veiculos.forEach(jsonStr => {
+        let veiculo_temp = JSON.parse(jsonStr);
+        v.push(veiculo_temp);
+    });
+
+    const index = v.findIndex(veiculo => veiculo.modelo === modelo);
+
+    if (index === -1) {
+        alert(`Veículo do modelo "${modelo}" não encontrado.`);
+        return;
+    }
+
+    v.splice(index, 1);
+
+    var veiculoJSON = JSON.stringify(v);
+    console.log(veiculoJSON);
+    salvarNoLocalStorage(veiculoJSON);
+
+    alert(`Veículo do modelo "${modelo}" foi excluído com sucesso.`);
+
+    listarVeiculo();
+}
+
 

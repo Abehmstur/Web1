@@ -57,3 +57,14 @@ body {
     font-size: 14px;
     color: #c3c5b4;
 }
+
+.msg-error {
+    color: #D8000C; 
+    background-color: #FFBABA;
+    border: 1px solid #D8000C;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 0;
+}
