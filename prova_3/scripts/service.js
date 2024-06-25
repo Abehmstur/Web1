@@ -1,3 +1,5 @@
+/* import Veiculo from './Veiculo.js'; */
+
 function verificarLogin(login, senha) {
     return login === 'admin' && senha === 'admin';
 }
@@ -65,8 +67,10 @@ function cadastrarVeiculo(){
     var airbag = document.getElementById('airbag').checked;
     var cilindradas = document.getElementById('cilindradas').value;
 
+    
+
     if (qtdPortas > 0){
-        var veiculo = {
+        var carro = {
             marca: marca,
             modelo: modelo,
             anoFabricacao: anoFabricacao,
@@ -78,7 +82,8 @@ function cadastrarVeiculo(){
             airbag: airbag
         };
     } else {
-        var veiculo = {
+        /*  const veiculo = new Veiculo(marca, modelo, anoFabricacao, cor, tipo, quilometragem, qtdPortas, preco, cilindradas);*/
+        var veiculo = {         
             marca: marca,
             modelo: modelo,
             anoFabricacao: anoFabricacao,
@@ -161,7 +166,6 @@ function listarVeiculo(){
 } */
 
 function excluirVeiculo(){
-    /* const marca = prompt("Digite a marca do veículo que deseja excluir:"); */
     const modelo = prompt("Digite o modelo do veículo que deseja excluir:");
 
     let veiculos = localStorage.getItem('veiculos');
@@ -169,33 +173,24 @@ function excluirVeiculo(){
     if (veiculos) {
         veiculos = JSON.parse(veiculos);
     } else {
-        veiculos = [];
         alert('Nenhum veículo cadastrado para excluir.');
         return;
     }
 
-    let v = [];
-    veiculos.forEach(jsonStr => {
-        let veiculo_temp = JSON.parse(jsonStr);
-        v.push(veiculo_temp);
-    });
-
-    const index = v.findIndex(veiculo => veiculo.modelo === modelo);
+    const index = veiculos.findIndex(veiculo => JSON.parse(veiculo).modelo === modelo);
 
     if (index === -1) {
         alert(`Veículo do modelo "${modelo}" não encontrado.`);
         return;
     }
 
-    v.splice(index, 1);
+    veiculos.splice(index, 1);
 
-    var veiculoJSON = JSON.stringify(v);
-    console.log(veiculoJSON);
-    salvarNoLocalStorage(veiculoJSON);
+    localStorage.setItem('veiculos', JSON.stringify(veiculos));
 
     alert(`Veículo do modelo "${modelo}" foi excluído com sucesso.`);
 
     listarVeiculo();
 }
-
+    
 

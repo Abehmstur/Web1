@@ -1,4 +1,4 @@
-class Veiculo{
+export default class Veiculo{
     constructor(marca, modelo, anoFabricacao, cor, tipo, quilometragem, qtdPortas, preco) {
         this.marca = marca,
         this.modelo = modelo,
@@ -11,5 +11,3 @@ class Veiculo{
     }
 
 }
-
-export default Veiculo;
